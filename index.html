@@ -39,10 +39,10 @@
 
 <h1>Watchdog Device</h1>
 
-<p><strong>Local-only temperature & humidity monitoring.</strong></p>
+<p><strong>What it is</strong></p>
 
 <p>
-Watchdog is a plug-and-play environmental monitoring appliance built on Raspberry Pi hardware.
+Watchdog is a plug-and-play environmental (temperature and humidity) monitoring appliance built on Raspberry Pi hardware.
 It uses Bluetooth sensors to track temperature and humidity and sends email alerts when conditions go out of range.
 </p>
 
@@ -53,13 +53,23 @@ Runs entirely on your local network. No cloud. No subscription.
 <h2>Why it exists</h2>
 
 <p>
-Most consumer monitors rely on cloud services and mobile apps.
-If the company shuts down or the cloud service fails, the device stops being useful.
+I built Watchdog because I needed a reliable way to monitor temperature and humidity in environments where conditions actually matter — winter tree storage, plant grow spaces, and equipment areas where environmental drift can cause real damage.
 </p>
 
 <p>
-Watchdog was built as a self-contained appliance that runs locally and continues operating
-independently of external services.
+When I started looking at existing monitoring products, I noticed that most were designed around cloud services and mobile apps. That approach works well for many use cases, but it also means the device’s usefulness depends on external infrastructure — internet connectivity, vendor servers, and ongoing software support.
+</p>
+
+<p>
+I wanted something that behaved more like an appliance than a gadget: a system that runs locally, continuously collects readings, and alerts you when conditions move outside defined limits, even if the internet is down.
+</p>
+
+<p>
+Another principle mattered to me as well. I’ve never liked the modern trend of paying monthly fees for simple software. Call me old-school, but I still prefer the model many of us grew up with in the 1990s: you buy a tool, it runs on your own machine, and it keeps doing its job.
+</p>
+
+<p>
+Watchdog was built around those ideas.
 </p>
 
 <h2>Who it's for</h2>
@@ -69,6 +79,7 @@ independently of external services.
   <li>Bonsai winter storage</li>
   <li>Wine cellars</li>
   <li>Small labs</li>
+  <li>Grow tents</li>
 </ul>
 
 <h2>Founder Batch</h2>
