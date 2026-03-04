@@ -39,7 +39,7 @@
 
 <h1>Watchdog Device</h1>
 
-<p><strong>What it is</strong></p>
+<h2>What it is</h2>
 
 <p>
 Watchdog is a plug-and-play environmental (temperature and humidity) monitoring appliance built on Raspberry Pi hardware.
@@ -71,6 +71,46 @@ Another principle mattered to me as well. I’ve never liked the modern trend of
 <p>
 Watchdog was built around those ideas.
 </p>
+  
+<h2>The Interface</h2>
+
+<p>
+Watchdog provides a simple local dashboard that shows live temperature and humidity readings from all connected sensors. Each sensor displays its current measurements along with signal strength and battery status, making it easy to see at a glance whether everything is operating normally.
+</p>
+
+<p>
+The interface also includes historical charts that track environmental trends over time. These graphs make it easy to spot gradual changes in temperature or humidity that might otherwise go unnoticed.
+</p>
+
+<p>
+Users can define acceptable ranges for temperature and humidity. If conditions move outside those limits, Watchdog immediately sends an email alert so corrective action can be taken.
+</p>
+
+<p>
+Sensor health is treated as part of monitoring. If a sensor disconnects or stops reporting, Watchdog surfaces the issue rather than silently ignoring it. The system continuously attempts reconnection so temporary signal interruptions do not require manual intervention.
+</p>
+
+<p>
+Everything runs locally on your network. The dashboard is accessible from any device on the same network through a web browser, without requiring cloud services or mobile apps.
+</p>
+
+<h2>Design Principles</h2>
+
+<p>
+Watchdog was designed with a small set of guiding principles. Monitoring systems should continue operating even when internet connectivity is unavailable, so the entire system runs locally on your network without requiring external cloud services.
+</p>
+
+<p>
+Failures should be visible rather than silent. If a sensor stops reporting, disconnects, or produces unusual readings, the system treats that condition as something that should be surfaced rather than ignored.
+</p>
+
+<p>
+Monitoring software should behave like infrastructure rather than an app. Services are designed to restart automatically and reconnect to sensors so that transient failures do not require manual intervention.
+</p>
+
+<p>
+Finally, the device is intended to be owned rather than rented. Once installed, it runs on your network and does not depend on subscriptions or remote services to continue functioning.
+</p>
 
 <h2>Who it's for</h2>
 <ul>
@@ -79,7 +119,7 @@ Watchdog was built around those ideas.
   <li>Bonsai winter storage</li>
   <li>Wine cellars</li>
   <li>Small labs</li>
-  <li>Grow tents</li>
+  <li>Indoor Grow and propagation tents</li>
 </ul>
 
 <h2>Founder Batch</h2>
